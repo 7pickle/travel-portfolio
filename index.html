@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mock-web</title>
+</head>
+<body>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-us">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#print">Print</a></li>
+            <li><a href="#">Review</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div> 
+
+    <section class="showcase">
+        <header>
+            <div class="logo"> <b>LowaProduction</b> </div>
+            <div class="toggle"></div>
+        </header>
+
+        <img src="images/old-bw-1.jpg" >
+
+        <div class="overlay"></div>  
+        
+        <div class="hero">
+            <h2>Life in Pictures</h2>
+            <h3>Exploring The Possibilities</h3>
+            <p>Transform your life at the hands of the best adventure photographers and videographers from the land of mountains.</p>
+        <a href="#">Explore</a>
+        </div>
+    </section>
+
+    
+<!--
+    <section class="about-us" id="#about-us">
+        <div class="about-content">
+            <img src="images/StrengthInNumbers800.jpg">        
+
+            <div class="about-text">
+                <h2>Who we are</h2>
+                <p>We are a group of new generation adventure enthuasists directed on making the lifetime of adventures a memory for the eternity. All the members are professionals working in the field leaving their clients with a big happy face when the trips are over. </p>
+            </div>
+        </div>
+    </section>
+
+    -->
+    
+    <section class="projects" id="projects">
+        <div class="project-title">
+                <h2>Projects</h2>
+                <p>List of projects I have worked with.</p>
+        </div>
+        <div class="project-content">
+            <div class="row">
+                <img src="images/BucketShot800.jpg" alt="">
+                <div class="row-content">
+                    <h3>Project</h3>
+                <p>Lorem adipisicing elit. Aperiam, aut?</p>
+                </div>
+                
+            </div>
+            <div class="row">
+                <img src="images/FORD-GT-PM800.jpg" alt="">
+                <h3>Project</h3>
+                <p>Lorem adipisicing elit. Aperiam, aut?</p>
+            </div>
+            <div class="row">
+                <img src="images/MorningFog800.jpg" alt="">
+                <h3>Project</h3>
+                <p>Lorem adipisicing elit. Aperiam, aut?</p>
+            </div>
+            <div class="row">
+                <img src="images/StrengthInNumbers800.jpg" alt="">
+                <h3>Project</h3>
+                <p>Lorem adipisicing elit. Aperiam, aut?</p>
+            </div>
+            <div class="row">
+                <img src="images/PARIS-PM800.jpg" alt="">
+                <h3>Project</h3>
+                <p>Lorem adipisicing elit. Aperiam, aut?</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="print" id="print">
+        <h2>Limited Prints</h2>
+        <div class="prints-limited">
+            <a href="#">
+                <img src="images/PARIS-PM800.jpg" alt="paris-landscape">
+                <p>Paris in Noir et Blanc.</p>
+            </a>
+            <a href="#">
+                <img src="images/FORD-GT-PM800.jpg" alt="ford-gt">
+                <p>Le mieux voiture de FORD_GT.</p>
+            </a>
+            <a href="#">
+                <img src="images/BucketShot800.jpg" alt="lake">
+                <p>Peter`s mieux photo.</p>
+            </a>
+            <a href="#">   
+                <img src="images/MorningFog800.jpg" alt="morning-fog">
+                <p>Morning fog and hazes.</p>
+            </a> 
+            <a href="#">
+                <img src="images/StrengthInNumbers800.jpg" alt="tree-line">
+                <p>The silent tree.</p>
+            </a> 
+        </div>
+    </section>
+
+
+    <section class="energy" id="energy">
+        <p class="energyP">Energy</p>
+        <div class="num1">
+            <p class="numP">10 - 18 </p>
+            <p class="charP">Opening Saga</p>
+        </div>
+        <div class="num2">
+            <p class="numP">19 - 25</p>
+            <p class="charP">Pre-closing Saga</p>
+        </div>
+        <div class="num3">
+            <p class="numP">10 - 18 </p>
+            <p class="charP">Opening Saga</p>
+        </div>
+        <div class="num4">
+            <p class="numP">19 - 25</p>
+            <p class="charP">Pre-closing Saga</p>
+        </div>
+        <button class="openNowButton">Open now</button>
+
+    </section>
+
+
+    <section class="contact" id="contact">
+        <div class="login-signup">
+            <a href=".signup-page"><input type="button" class="signup" value= "Sign Up"></a>
+            <input type="button" class="login" value= "Log In">
+        </div>
+        <div class="signup-page">
+            <h3>Sign Up for Free</h3>
+
+            <div class="client-name">
+                <input class="first-name" placeholder="First Name*" type="text" required>
+                <input class="last-name" placeholder="Last Name*" type="text" required>
+            </div>
+            <input class="email-address" placeholder="Email Address*" type="email" required>
+            <input class="setAPassword" placeholder="Set A Password*" type="password" required>
+            <input type="button" value="Get started" class="get-started">
+        </div>
+    </section>
+
+
+
+    <section class="footer" id="footer">
+        <p>© Copyright 2022 LowaProduction</p>
+         
+    </section>
+    
+   
+    <script>
+        const menuToggle = document.querySelector ('.toggle')
+        const showcase = document.querySelector ('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+
+    </script>
+</body>
+</html>
